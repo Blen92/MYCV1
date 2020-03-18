@@ -27,3 +27,23 @@ a.active{
 body{
     background-color: #bdc3c7;
 }
+h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.gallery{
+    margin: auto;
+    overflow: auto;
+    float: left;
+    width: 100%;
+}
+img{
+   
+    width: 30%;
+    height: auto;
+    margin: 1.5%;
+    /*position: relative;*/
+    /*align-items: center;*/
+}

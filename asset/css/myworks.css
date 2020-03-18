@@ -1,0 +1,66 @@
+nav{
+    background-color: #333333;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+}
+nav li{
+    display: inline-block;
+    font-size: 20px ;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 20px;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: lightgrey; 
+    color: black;
+    
+}
+a.active{
+    background-color: lightgrey; 
+    color: black;
+}
+body{
+    background-color: #bdc3c7;
+}
+h1{
+    color: #9b59b6;
+}
+h2{
+    color: orange;
+}
+li{
+    color: blue;
+}
+p{
+    background-color: yellow;
+}
+input{
+    border: 3px solid red;
+}
+.hello{
+    background-color: white;
+}
+#special{
+    border: 2px solid blue;
+}
+div p{
+    font-size: 25px;
+}
+input[type="text"]{
+    background-color: gray;
+}
+div:nth-child(6) p{
+    background-color: pink;
+}
+div:nth-child(6) p:nth-child(3){
+    border: 5px solid white;
+}
+div:nth-child(6){
+    color: white;
+    font-size: 20px;
+}

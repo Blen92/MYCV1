@@ -37,12 +37,29 @@ img{
 div{
     width: 100%;
 }
+.container-1{
+    display: flex;
+    
+}
+.container-1 div{
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+.container-2{
+    display: flex;
+    
+}
+img{
+    width: 500px;
+    height: 300px;
+    margin-left: 5%;
+}
+.heading{
+    font-size: 20px;
+    
+}
 .main{
-    float: left;
+    font-size: 20px;
+    margin-left: 5px;
 }
-.side{
-    float: right;
-    align-items: center;
-}
-
 

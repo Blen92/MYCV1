@@ -37,11 +37,12 @@ img{
 div{
     width: 100%;
 }
-.header{
-    float: right;
-    margin: 10px;
-    
-}
 .main{
-
+    float: left;
 }
+.side{
+    float: right;
+    align-items: center;
+}
+
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blen A./Blog</title>
-    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="icon" type="image/jpj" href="asset/image/favicon.jpg">
     <link rel="stylesheet" href="asset/css/blog.css">
 
 </head>
@@ -17,58 +17,90 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a class="active" href="blog.html">Blog</a></li>
-                <li><a href="myworks.html">My Works</a></li>
-                
-                
-                
-                
+                <li><a href="myworks.html">My Works</a></li> 
             </ul>
         </nav>
     </header>
     <!--Lets create blog-->
-    <div id="content">
+    <div class ="content">
          <!--1 post-->
         <section>
-            <p class="title">My first post</p>
+            <p class="title">Relative size</p>
            <article>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-
+            <p>A relative unit gets sizing from something else. In the specification the relative length units are 
+                defined as em, ex, ch and rem. These are font-relative lengths. The specification also defines a % 
+                value, which is always relative to another value. Using relative values means that things can scale 
+                up and down according to some other value.</p>
+                <p><strong>%</strong></p>
+                <p>Relative to the parent element. A container directly inside the viewport with a width of 90% will 
+                    always be 90% of the available width - whether I am on a phone or high resolution display.
+                    If I have another container inside that first container with a width of 50%, it takes 50% of the 
+                    width of the parent element and not the viewport.  percentage units are a key component in the 
+                    flexible grids needed for responsive design.</p>
+                <p><strong>em</strong></p>
+                <p>Relative to the font-size of the element (2em means 2 times the size of the current font). Using ems 
+                    as a length unit in layout, and in particular in padding and margins can help to maintain a vertical 
+                    rhythm. If a user resizes their text or you decide to make font sizes larger or smaller in your stylesheet, 
+                    the em length unit will scale proportionately.</p>
+                    <p>Because of the fact that em size is relative to the font size on the element. This can make ems a little 
+                        tricky to use. If elements are nested or appear in different contexts in your document you can find that text 
+                        or elements sized with ems can appear much smaller or larger than you imagined. </p>
+                <p><strong>rem</strong></p>
+                <p>The rem (root em) unit is the font-size of the root element, which is usually the html element. As with em, you 
+                    can use this value as a length unit and it will always remain relative to the root element. You don’t get the 
+                    nesting issue as we saw with em. This makes it easier for you to set sizes relative to a font size declared on 
+                    the root element, no matter what context the element is in.</p>
+                <p><strong>Tip</strong> The em and rem units are practical in creating perfectly scalable layout!</p>
             </article>
-            <p class="date">march 20, 2020: 8: 20</p>
+            <p class="date">march 19, 2020: 4: 00</p>
 
         </section>
 
         <!--2 post-->
         <section>
-            <p class="title">My second post</p>
+            <p class="title">Default browser width </p>
            <article>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-
+               <p>Setting the font size in pixel values (px) is a good choice when you need pixel accuracy. A px value is static.
+                    This is an OS-independent and cross-browser way of literally telling the browsers to render the letters at 
+                    exactly the number of pixels in height that you specified. The results may vary slightly across browsers, 
+                    as they may use different algorithms to achieve a similar effect.</p>
+                <p>Font sizing settings can also be used in combination. For example, if a parent element is set to 16px and 
+                    its child element is set to larger(200px), the child element displays larger than the parent element in the page.</p>
+               
             </article>
-            <p class="date">march 20, 2020: 8: 20</p>
+            <p class="date">march 19, 2020: 7: 20</p>
+            
             
         </section>
 
         <!--3 post-->
         <section>
-            <p class="title">My third post</p>
+            <p class="title">Changes in css3 </p>
            <article>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam sequi reiciendis consequuntur? Nobis doloribus quia tempore dolores excepturi consequatur sequi error maxime recusandae consequuntur.</p>
-
+               <p><strong>1. CSS 3 Selectors</strong></p>
+               <p>In addition to the selectors that were available in CSS2, CSS 3 introduces some new selectors. 
+                Using these selectors, you can choose DOM elements based on their attributes. So, you don't need 
+                to specify classes and IDs for every element. Instead, you can utilize the attribute field to style 
+                them.</p>
+                <p><strong>2. CSS 3 Rounded Corners</strong></p>
+                <p>Rounded corner elements can spruce up a website, but creating a rounded corner requires a designer 
+                    to write a lot of code. Adjusting the height, width and positioning of these elements is a 
+                    never-ending chore because any change in content can break them. CSS 3 addresses this problem by 
+                    introducing the border-radius property, which gives you the same rounded-corner effect and you don't 
+                    have to write all the code.</p>
+                <p><strong>3. CSS 3 Border Image</strong></p>
+                <p>Another exciting feature in CSS 3 is the ability to swap out a border with an image. The property 
+                    border-image allows you to specify an image to display instead of a plain solid-colored border.</p>
+                <p><strong>4. CSS 3 Box Shadow</strong></p>
+                <p>A box shadow allows you to create a drop shadow for an element. Usually this effect is achieved using 
+                    a repeated image around the element. However, with the property box-shadow this can be achieved by 
+                    writing a single line of CSS code.</p>
+                <p><strong>5. CSS 3 Text Shadow</strong></p>
+                <p>The new text-shadow property allows you to add drop shadows to the text on a webpage. Prior to CSS 3, 
+                    this would be done by either using an image or duplicating a text element and then positioning it. 
+                    A similar property called box-shadow is also available in CSS 3.</p>
             </article>
-            <p class="date">march 20, 2020: 8: 20</p>
+            <p class="date">march 19, 2020: 8: 00</p>
             
         </section>
 
